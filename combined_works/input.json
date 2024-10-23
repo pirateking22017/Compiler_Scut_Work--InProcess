@@ -1,0 +1,15 @@
+{
+    "functions": [
+      {
+        "name": "example_function",
+        "instrs": [
+          {"dest": "a", "op": "add", "args": ["b", "c"]},
+          {"dest": "d", "op": "mul", "args": ["a", "e"]},
+          {"dest": "f", "op": "call", "args": ["g", "h"]},
+          {"dest": "a", "op": "add", "args": ["b", "c"]},
+          {"dest": "d", "op": "print", "args": ["d"]}
+        ]
+      }
+    ]
+  }
+  

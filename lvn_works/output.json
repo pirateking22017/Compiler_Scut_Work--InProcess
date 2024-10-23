@@ -1,0 +1,36 @@
+{
+  "functions": [
+    {
+      "name": "main",
+      "args": [],
+      "instrs": [
+        {
+          "dest": "x",
+          "op": "const",
+          "value": 5
+        },
+        {
+          "dest": "y",
+          "op": "const",
+          "value": 3
+        },
+        {
+          "dest": "z",
+          "op": "const",
+          "value": 8
+        },
+        {
+          "dest": "result",
+          "op": "const",
+          "value": 40
+        },
+        {
+          "op": "print",
+          "args": [
+            "result"
+          ]
+        }
+      ]
+    }
+  ]
+}

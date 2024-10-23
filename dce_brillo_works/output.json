@@ -1,0 +1,137 @@
+{
+  "functions": [
+    {
+      "name": "main",
+      "args": [],
+      "instrs": [
+        {
+          "op": "const",
+          "dest": "i",
+          "type": "int",
+          "value": 0
+        },
+        {
+          "op": "const",
+          "dest": "j",
+          "type": "int",
+          "value": 0
+        },
+        {
+          "op": "const",
+          "dest": "n",
+          "type": "int",
+          "value": 10
+        },
+        {
+          "op": "const",
+          "dest": "m",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "label": "loop_i"
+        },
+        {
+          "op": "lt",
+          "dest": "cond_i",
+          "type": "bool",
+          "args": [
+            "i",
+            "n"
+          ]
+        },
+        {
+          "op": "br",
+          "args": [
+            "cond_i"
+          ],
+          "labels": [
+            "loop_j",
+            "end"
+          ]
+        },
+        {
+          "label": "loop_j"
+        },
+        {
+          "op": "lt",
+          "dest": "cond_j",
+          "type": "bool",
+          "args": [
+            "j",
+            "m"
+          ]
+        },
+        {
+          "op": "br",
+          "args": [
+            "cond_j"
+          ],
+          "labels": [
+            "inner_body",
+            "inc_i"
+          ]
+        },
+        {
+          "label": "inner_body"
+        },
+        {
+          "op": "print",
+          "args": [
+            "i",
+            "j"
+          ]
+        },
+        {
+          "op": "add",
+          "dest": "j",
+          "type": "int",
+          "args": [
+            "j",
+            "1"
+          ]
+        },
+        {
+          "op": "jmp",
+          "labels": [
+            "loop_j"
+          ]
+        },
+        {
+          "label": "inc_i"
+        },
+        {
+          "op": "add",
+          "dest": "i",
+          "type": "int",
+          "args": [
+            "i",
+            "1"
+          ]
+        },
+        {
+          "op": "const",
+          "dest": "j",
+          "type": "int",
+          "value": 0
+        },
+        {
+          "op": "jmp",
+          "labels": [
+            "loop_i"
+          ]
+        },
+        {
+          "label": "end"
+        },
+        {
+          "op": "print",
+          "args": [
+            "i",
+            "j"
+          ]
+        }
+      ]
+    }
+  ]
+}

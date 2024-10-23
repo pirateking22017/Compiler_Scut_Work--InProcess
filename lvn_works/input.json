@@ -1,0 +1,16 @@
+{
+    "functions": [
+      {
+        "name": "main",
+        "args": [],
+        "instrs": [
+          { "dest": "x", "op": "const", "value": 5 },
+          { "dest": "y", "op": "const", "value": 3 },
+          { "dest": "z", "op": "add", "args": ["x", "y"] },
+          { "dest": "result", "op": "mul", "args": ["z", "x"] },
+          { "op": "print", "args": ["result"] }
+        ]
+      }
+    ]
+  }
+  
